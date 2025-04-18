@@ -1,0 +1,19 @@
+Protocol —— set of rules for an interaction between two parties
+
+IP —— Internet protocol, data is sent in IP packet (IP header &data)
+	2 main version: IPV4, IPV6
+
+TCP —— Transmission control protocol, built on top of IP
+	make sure data be sent (1. in right order 2.if missing, fix it or make notice) 
+
+	establishes connection between client &server (three-way handshake)
+	Client                    Server
+ 	 |---- SYN --------->|   (Request to connect)
+ 	 |<--- SYN + ACK ----|   (Accept and confirm)
+ 	 |---- ACK --------->|   (Confirm, let's communicate)
+
+HTTP —— Hypertext transfer protocol, built on top of TCP.
+	lets browser talk to server and get information, more business logic
+	"request"  "response"  "method"  "path name"
+	
+	
