@@ -1,0 +1,7 @@
+Storage
+
+Database —— a server that <store(write/recording) &retrieve(read/querying) data>
+	persistence(持久性), 
+	disk: data will be still there after reboot/outage	memory:read/write faster than disk, but data lost after reboot/outage
+	consistency(多地存储的时候) 
+	
