@@ -1,0 +1,16 @@
+Load Balancers
+
+Load balancer —— a tool that distributes incoming traffic to multiple servers, so no single server gets overloaded. (a kind of reverse proxy)
+		1 hardware LB; 2 software LB; 3 cloud-base LB
+
+Traffic distribution methods:
+	1 Round Robin, send request to the next server in line/ take turns. 
+			For login server, all servers are similar
+		"weighted round robin": still take turns, but send more to more powerful server
+			when servers have different capacities
+	2 IP Hash, route base on client's IP (always send the same user/IP to the same server), for 'session stickiness 对话粘性'
+		  e.g. shopping eshop, your cart info will be in the same server, so the cart stays CONSISTENT.
+	3 Path-based (or URL-based routing), routes to what the user is asking for 
+		base on URL, route to pay/ image/ api/ login 
+	4 Least Connections, send request to the server with the fewest active. 
+		For maintain long/ variable sessions (e.g. video streaming, chat APP)
