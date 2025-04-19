@@ -1,0 +1,11 @@
+Proxies
+
+Proxies —— a server sits between client and server to handle requests &responses
+
+
+
+Forward Proxy:  sits in front of the client, on the client's behalf. 
+		Used to control access(company use F proxy to control what websites employess can visit) or hide clients' identity.
+
+Reverse Proxy: sits in front of server, handles incoming requests before server
+		used for Load balancing, Caching, security
