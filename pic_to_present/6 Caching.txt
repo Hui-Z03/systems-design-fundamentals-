@@ -1,0 +1,17 @@
+Cache 缓存
+
+Caching —— storing frequently needed data in a faster, temporary storage.
+		speed up access; reduce load (lower costs on cloud database); handle more users (reduce bottlenecks)
+当以上情况针对只读的时候很简单，e.g. client get webpage from server
+如果是写入的情况就会复杂多了：chacing 和 database中会出现两个truth; 或者分布式的server &server中会出现多个truth, 不同步导致混乱。(例如Youtube的评论系统，用户会互相评论。不同步会导致留言已经更新了，但是有人评论了“旧留言 stale”)。相反的，“视频的观看次数”就不太敏感，只是单项的写入。
+* 思考写入的data对同步和精确的要求高不高
+
+caching has a lot of pitfalls, watch out for the pitfalls —— 写入静态数据比较简单，mutable data很复杂
+					if don't care about consistency or staleness, caching
+					if in a distributed system, think how to deal with caching
+
+write through cache: data is written to both cache &database at same time
+write back cache: data is written to the cache first, then saved to database later 
+
+eviction policies: a rule decides which old data to be removed from cache when it's full
+	some popular policies: LRU (the Least Recently Used),  LFU (the Least Frequently Used)
