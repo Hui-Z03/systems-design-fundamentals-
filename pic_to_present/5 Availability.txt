@@ -1,0 +1,26 @@
+Availability
+
+Availability —— how 'resistant' a system is to failures (system fault tolerance)
+		running time in the % of time in a given period of time, e.g. 50% availability
+		Nines, (describe availability): 4 nines means 99.99%, 3nines means 99.9% availability
+		* five nines is gold standard of availability
+		* HA (high availability) is a method to approach
+
+SLA —— service level agreement, between customer &service provider
+		remember to check the percentage of availability in the SLA
+
+SLO —— service level objective, an goal inside the team to  achieve
+
+SLI —— service level indicator,  a historical data that shows service level
+
+	availability 是系统设计最重要的考量之一
+		HA可能引起 higher latency/lower throughput, high cost，
+		思考系统中哪部分绝对不能宕机，哪里可以（trade-offs）
+
+Redundancy(冗余) —— duplicating or multiplying certain parts of the system, 
+			if you need to eliminate single points of failure—use redundant, and use load balancer
+
+		Active redundancy: multiple entities performing the same task at same time
+		Passive redundancy: keep backup inactive until needed 
+		
+		
