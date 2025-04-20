@@ -1,0 +1,25 @@
+Relational Databases
+
+
+Relational Database (SQL) —— store data in tables (spreadsheet), tables can be connected to each other
+
+ACID, it's an important concept in SQL database
+A - Atomicity (all or nothing), all steps in a package. Either the package (all steps) happen, or none happen
+	e.g. bank transfer 
+C - Consistency, always follow the rules. To make sure that you will always see a database - all transaction are completed, no "on going"
+							读取数据库时，只能看到一个“已完成，合法的DB”
+I - Isolation,  even multiple transactions can occur same time, *but  they are executed one by one.
+
+D - Durability, once a transaction is done, it is saved in DB, even the system crashes right after.
+
+A	Atomicity		All or nothing
+C	Consistency	Data stays valid
+I	Isolation		No interference from other users
+D	Durability		Changes are saved permanently
+
+
+database index: to database, like a table of contents in a book. It can help find data faster, without scanning rows one by one.
+	
+	(advantage, faster search, better performance)
+	(disadvantage, slower inserts data, use more storage)
+		—— sth to think when trade-offs
