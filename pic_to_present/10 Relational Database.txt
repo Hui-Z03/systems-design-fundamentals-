@@ -23,3 +23,6 @@ database index: to database, like a table of contents in a book. It can help fin
 	(advantage, faster search, better performance)
 	(disadvantage, slower inserts data, use more storage)
 		—— sth to think when trade-offs
+
+Master-Slave Replication: primary database (only write into), slave databases (read only). 
+	—— a classic way to scale sql database

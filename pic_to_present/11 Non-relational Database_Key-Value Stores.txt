@@ -1,0 +1,12 @@
+Non-relational database
+
+Non-relational database (NoSQL) —— a database that stores data in a non-tabular format
+
+
+one of the most commone NoSQL is
+Key-Value Stores:  like a dictionary, only have Key &Value
+
+	super fast; simple; easy to scale (horizontally)
+	common used for: Caching (use Redis); Session storage; storing user preferences/ game scores
+
+	<Redis>, a very popular, very fast based on memory database
