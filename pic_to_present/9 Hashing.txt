@@ -1,0 +1,15 @@
+Hashing
+
+Hashing —— an action can transform an arbitrary piece of data into a fixed size value. (typically an <integer value>)
+	one of the purpose for hashing is to clinet can do *cache hit(缓存命中)*
+
+Consistent hashing: distribute data across multiple servers, even server are added/removed, things stay stable.
+		Think of a circle (0 - 360), 
+			servers &data are assigned positions on the circle (by using hash function), 
+				data goes to the first server clockwise 
+		use virtual node: put servers on the circle many times at different positions, make distributing fair &balanced
+
+	benefits: Scales well; Less data movement; perfect for distributed systems (caching, databases, load balancers)
+
+Rendezvous hashing: a way to allosws data to  be distributed to servers, in a simple &balanced way.
+		 data+server name hashed to a value, highest hash value wins
