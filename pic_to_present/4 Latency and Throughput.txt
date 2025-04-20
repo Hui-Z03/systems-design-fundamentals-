@@ -3,7 +3,7 @@ Latency & Throughput
 Latency —— how long it takes for data to traverse a system
 
 Throughput —— how much work a machine can perform in a given period of time
-		(how much data can be transferred from 1 point to another poin in a system)
+		(how much data can be transferred from 1 point to another point in a system)
 
 don't make assumptions about latency/throughput based on the other, 
 look for the "bottleneck",  it may be "latency" or "throughput".
