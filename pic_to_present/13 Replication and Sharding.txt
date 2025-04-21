@@ -1,0 +1,16 @@
+Replication & Sharding
+
+Replication —— maintaining multiple copies of DB or components across the system. (maybe in different locations)
+		1 Master-Slave Replication: master-write data in; slave-read only
+		2 Master-Master Replication: synchronous write data in
+		3 Aync-Replication: no consistency
+		4 Sync-Replication: only writing data into all replication is done, or nothing done. High consistency
+
+		* for bank:  Master-Slave Replication + Sync Replication.    For Strong consistency and High Availability
+				used in 'account balance' 'transfer record' etc.
+		<Oracle Data Guard> is a product is commonly used in bank industry
+
+
+Sharding —— splits a large dataset into smaller, independent pieces. (shards)
+		carefully choose hash function for balanced sharding,
+		use reverse proxy in front of shards, to handle requests, distribute requests to shards 
