@@ -1,0 +1,21 @@
+Specialized Storage Paradigms
+
+Blob Store —— Binary Large Object Store. Today, it means more like arbitrary, unstructured data
+		for image, audio, video, large text files. e.g. Blogs, 
+		*AWS S3
+		*Azure Blob Storage
+		*Google Cloud Storage (GCS)
+
+Time Series DB —— specialized for storing time series data
+		for Monitoring, IoT analysis, Stock Marketm 
+		*InfluxDB
+		*Prometheus
+
+Graph DB —— stores data as nodes and relationships, making it ideal for handling complex data. 
+		e.g. social networks; recommendation systems
+		*Neo4j
+
+Spatial DB —— specifically designed to store, manage, and query data in geometric space
+		for GPS, GoogleMap
+		*quadtree, a tree data structure that divides a two-dimensional space into 4 quadrants
+			commonly used for Spatial DB index
