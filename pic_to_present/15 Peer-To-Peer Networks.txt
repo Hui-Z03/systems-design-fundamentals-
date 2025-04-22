@@ -1,0 +1,5 @@
+Peer-To-Peer Networks
+
+Peer-To-Peer Networks —— a decentralized network where devices(peers) interact &share data without central servers.
+
+			e.g. Kraken from Uber
