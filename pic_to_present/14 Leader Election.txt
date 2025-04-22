@@ -1,0 +1,7 @@
+Leader Election
+
+
+ Leader Election —— the process of selecting one node from a group of distributed nodes to act as the coordinator/decision maker.
+		Leader keep working, followers watching if the leader is still working
+
+		Zookeeper is a common used tool for leader election
