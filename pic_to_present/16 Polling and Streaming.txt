@@ -1,0 +1,15 @@
+Polling and Streaming
+
+
+Polling —— client repeatedly sends requests to the server  to check new data or updates 
+		例如：温度环境监控等，不要求频繁更新的场景。
+
+Long Polling —— client sends requests to the server, and the server holds the request open till 
+		new data is available then responds, or timeout.
+		例如：小规模系统，无法稳定使用WebSocket. System Notice
+
+
+Streaming —— build up a single, long-lived connection between client and server. New data will be sent at once. (real-time update)
+		e.g. WebSocket (communication real-time, chatAPP), SSE (server-sent events, server pushes updates)
+		live chat(group chat); stock prices; video live streaming; Game (multiplayer online games)
+		
