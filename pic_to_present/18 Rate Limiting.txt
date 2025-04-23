@@ -1,0 +1,16 @@
+Rate Limiting
+
+
+Rate Limiter —— control the number of requests a user or system can make to a service within a given time period.
+		to prevent overloaded & abuse (dos/Ddos attack )
+
+		Redis is commonly used to implement Rate Limiting. It's in Cach, it's fast, atomic operations
+
+
+an example of Rate Limiting in a simple system:
+	Client → Load Balancer / API Gateway → Rate Limiter → API Server → Database
+		DB前也可以加 rate limiter, 保护数据，防DDos
+		if system has third party service, set Rate Limiter in front of third party API
+
+
+
