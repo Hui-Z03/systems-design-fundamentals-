@@ -1,0 +1,23 @@
+Conguration
+
+
+config —— a set of variable or parameters (API keys, DB urls etc.) that control a system behaves in different env. 
+		They are sensitive data, you don't want to hard coding in your code
+
+  
+static configuration: a set of system setting, loaded at startup and need reboot to change.
+
+
+dynamic configuration: setting that can be "hot" updated when servers are running, without reboot, allowing real-time changes.
+		*be careful with the access control, approval workflow, as dynamic config could affect the system in real time. 
+
+
+
+特性		 Static Config（静态配置）		 Dynamic Config（动态配置）
+加载时机	系统启动时加载			运行过程中可以实时变更
+是否需重启	是，必须重启服务		否，实时生效
+存储方式	配置文件、环境变量		配置中心、数据库、缓存
+适合配置	系统级、敏感、稳定的设置	业务逻辑相关、可调参数
+示例		DB接地址、API 密钥、端口号	功能开关、限流阈值、动态权重
+优点		安全稳定，避免运行时出错	灵活高效，支持实时调整
+缺点		缺乏灵活性			更复杂，需要配置热更新机制
