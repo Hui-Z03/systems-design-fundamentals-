@@ -1,0 +1,17 @@
+Logging and Monitoring
+
+
+Logging —— the process of recording system events and activites.
+		can help monitor, debug, analyze 
+
+	2 common format: syslog & Json.  
+		syslog便于阅读，但有点过时了。 Json人读起来吃力，但便于机器分析，常用于云计算
+		log &monitor tools: Google stack driver; Azure monitor
+
+
+use database for logs, easy to store, easy to analysis, use Time serise DB, so that we can monitor & analysis easily  
+
+
+Monitoring ——  continuous process of collecting, analyzing, visualizing system metrics.
+		to ensure the system is healthy, reponsive.  
+		we can setup monitoring rules, & actions if an alert is triggerd: auto action or send alert to system owner
