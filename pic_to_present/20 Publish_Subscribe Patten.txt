@@ -1,0 +1,21 @@
+Publish/Subscribe Pattern
+
+
+pub/sub pattern —— a messaging model set in between sender(pub) and receiver(sub), 
+			it receive messages from pub (pub don't need to know who is receiving),
+				sub is listening to it to get messages.
+
+				e.g. Google Cloud pub/sub; Apache Kafka
+
+			conmmonly used for order system; chat; checking stock price
+					fillter, e.g.   subA want information 1 2 3, but subB want 2 3 4
+
+	easy to scale; Async; data be stored (persistence)
+		
+	don't use it for *consistence*. For example: bank transfer system, ask for strong consistence.
+		can be used for other sub around the transfer but not that consistence, like notice, send record for audit
+
+当一个消息，有很多sub 聆听者时，而且这些sub相对独立，没有互相影响的时候，适用 pub/sub pattren
+
+
+
