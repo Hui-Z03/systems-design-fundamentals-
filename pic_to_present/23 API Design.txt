@@ -1,0 +1,9 @@
+API Design
+
+
+API —— Application Programing Interface, a set of rules allows softwares to communicate and exchange data.
+
+	e.g.  post /api/photos ;     get /api/photos/feed
+	Entity
+	Endpoint
+
