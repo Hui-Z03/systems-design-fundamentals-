@@ -1,0 +1,7 @@
+MapReduce
+
+
+MapReduce —— processing large datasets in a distributed, parallel manner.
+	是一种将大型任务拆分成小任务，在多台机器上并行执行，最后合并结果的处理模型。
+
+	used for large-scale offline analytics; Log analytics; search indexing; graph processing
