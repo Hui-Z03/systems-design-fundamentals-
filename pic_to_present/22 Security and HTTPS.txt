@@ -1,0 +1,7 @@
+Security and HTTPS
+
+HTTP —— for security reasons, Encryption (Symmetric 1 key; Asymmetric 2 keys) ===>  HTTPS (TLS handshake; SSL certilicate)
+
+
+
+Security 
