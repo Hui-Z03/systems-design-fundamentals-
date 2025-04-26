@@ -18,4 +18,7 @@ pub/sub pattern —— a messaging model set in between sender(pub) and receiver
 当一个消息，有很多sub 聆听者时，而且这些sub相对独立，没有互相影响的时候，适用 pub/sub pattren
 
 
+*** message queue 包括 pub/sub pattern.   pub/sub pattern是  message queue的一种经典的应用模式 
+
+
 
